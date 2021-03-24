@@ -1,0 +1,25 @@
+@import 'normalize';
+@import 'variables';
+@import 'nav';
+@import 'sections';
+@import 'content';
+@import 'gallery';
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $white;
+    font-family: 'EB Garamond', serif;
+}

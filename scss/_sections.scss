@@ -1,0 +1,163 @@
+.page-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+    &--hero {
+        display: flex;
+        flex-direction: column;
+        background-image: linear-gradient(
+                rgba($hero-gradinet-top, 0.75) 0%,
+                rgba(0, 0, 0, 0) 60%,
+                rgba(0, 0, 0, 0) 100%
+            ),
+            url(../assets/hero_bg.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+    }
+    &--gallery {
+        background: linear-gradient(
+            180deg,
+            rgba($white, 1) 0%,
+            rgba($white, 1) 48px,
+            rgba($grey-light, 1) 48px,
+            rgba($grey-light, 1) 100%
+        );
+        @media only screen and (min-width: $lg) {
+            flex-direction: row;
+        }
+    }
+    &--reverse {
+        @media only screen and (min-width: $lg) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    max-width: 1370px;
+    margin: 0 auto;
+    &--hero {
+        padding: 0 15px;
+        animation: fadeInHero 1.6s;
+        @keyframes fadeInHero {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @media only screen and (min-width: $xl) {
+            width: 1150px;
+            padding: 0 20px;
+        }
+    }
+    &--galleryFirst {
+        width: 100%;
+        max-width: 930px;
+        padding: 0;
+        @media only screen and (min-width: $lg) {
+            margin: 0 0 40px;
+        }
+    }
+    &--gallerySecond {
+        padding: 60px 15px 86px;
+        max-width: 800px;
+        @media only screen and (min-width: $sm) {
+            padding: 60px 0 86px;
+        }
+        @media only screen and (min-width: $md) {
+            padding: 60px 0 86px;
+        }
+        @media only screen and (min-width: $lg) {
+            padding: 60px 15px 86px;
+            margin: 74px 0 0;
+            max-width: 400px;
+        }
+        @media only screen and (min-width: $xl) {
+            padding: 60px 25px 86px;
+            max-width: 460px;
+        }
+    }
+    &--sectionFirst {
+        padding: 86px 15px 99px;
+        @media only screen and (min-width: $lg) {
+            padding: 102px 15px 122px;
+        }
+    }
+    &--sectionLong {
+        padding: 86px 15px 78px;
+        @media only screen and (min-width: $lg) {
+            padding: 110px 15px 125px;
+        }
+        @media only screen and (min-width: $xl) {
+            padding: 110px 15px 125px;
+        }
+    }
+    &--footer {
+        padding: 0 20px;
+        align-items: center;
+        @media only screen and (min-width: $lg) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    width: 100%;
+    padding: 24px 15px;
+    max-width: 1370px;
+    margin: 0 auto;
+    @media only screen and (min-width: $xl) {
+        padding: 24px 0;
+    }
+    &__logo {
+        display: block;
+        height: 50px;
+        width: 221px;
+        background-image: url(../assets/header_logo.png);
+    }
+}
+
+.footer {
+    background-color: $footer-color;
+    &__logo {
+        display: block;
+        width: 66px;
+        height: 67px;
+        margin: 24px 0;
+        background-image: url(../assets/footer_logo.png);
+        transition: all 0.25s;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    &__copy {
+        display: block;
+        flex-basis: 100%;
+        text-align: center;
+        margin: 33px 0 11px;
+        font-size: 15px;
+        letter-spacing: 0.02em;
+        color: $grey-dark;
+        font-family: 'Lato', sans-serif;
+        @media only screen and (min-width: $lg) {
+            flex-basis: auto;
+            margin: 12px 0 0 35px;
+        }
+    }
+}

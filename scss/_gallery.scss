@@ -1,0 +1,147 @@
+.gallery {
+    width: 100%;
+    opacity: 0;
+    @media only screen and (min-width: $md) {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    &--fadeIn {
+        opacity: 1;
+        transition: all 1s;
+    }
+    &--left {
+        @media only screen and (min-width: $lg) {
+            padding-right: 50px;
+            padding-left: 0;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        @media only screen and (min-width: $xl) {
+            padding-right: 80px;
+            max-width: 880px;
+        }
+    }
+    &--right {
+        @media only screen and (min-width: $lg) {
+            padding-right: 0;
+            padding-left: 50px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        @media only screen and (min-width: $xl) {
+            padding-left: 80px;
+            max-width: 880px;
+        }
+    }
+    &__image {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        &__img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: all 200ms;
+            opacity: 1;
+            &.fade {
+                opacity: 0.5;
+            }
+        }
+        &__btns {
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100px;
+            @media only screen and (min-width: $md) {
+                right: -50px;
+            }
+            &--reverse {
+                @media only screen and (min-width: $lg) {
+                    left: -50px;
+                }
+            }
+            &__item {
+                cursor: pointer;
+                display: block;
+                width: 50px;
+                height: 50px;
+                background-color: $main-color-darker;
+                transition: all 0.25s;
+                border: 0;
+                outline: 0;
+                &:hover {
+                    background-color: $main-color;
+                }
+                &--prev {
+                    background-image: url($arrow-left);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    visibility: hidden;
+                }
+                &--next {
+                    background-image: url($arrow-right);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    &__thumbs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+        &__viewport {
+            display: flex;
+            align-items: center;
+        }
+        &__item {
+            cursor: pointer;
+            display: block;
+            height: 90px;
+            padding: 9px;
+            transition: all 0.2s, width 0.1s;
+            &:hover .gallery__thumbs__item__img::after {
+                opacity: 0;
+            }
+            &--curr {
+                padding: 0;
+                margin: 0;
+                & .gallery__thumbs__item__img::after {
+                    opacity: 0;
+                }
+            }
+            &__img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-color: $main-color;
+                opacity: 1;
+                transition: all 0.2s;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $main-color;
+                    opacity: 0.4;
+                    transition: all 0.2s;
+                }
+            }
+        }
+    }
+}

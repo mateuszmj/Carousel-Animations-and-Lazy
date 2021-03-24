@@ -1,0 +1,30 @@
+// VARIABLES
+
+// MEDIA QUERIES
+$xs: 480px;
+$sm: 620px;
+$md: 980px;
+$lg: 1150px;
+$xl: 1370px;
+
+// COLORS
+$black: #000;
+$white: #fff;
+$grey-light: #f6f8f9;
+$grey-medium: #caced1;
+$grey-dark: #949a9d;
+
+$main-color: #004777;
+$main-color-darker: #003355;
+$subheading-color: #1a262f;
+$font-color: #1b2730;
+
+$hero-bg: #0f4162;
+$hero-gradinet-top: #003355; //height: 613px;
+
+$footer-color: #1a262f;
+
+// SVG ICONS
+$arrow-right: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22.062' height='9.125' viewBox='0 0 22.062 9.125'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Warstwa_46' data-name='Warstwa 46' class='cls-1' d='M212.679,783.3v-2.274H225.65v-3.413l9.1,4.55-9.1,4.55V783.3H212.679Z' transform='translate(-212.688 -777.594)'/%3E%3C/svg%3E%0A";
+$arrow-left: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='9' viewBox='0 0 22 9'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Warstwa_46' data-name='Warstwa 46' class='cls-1' d='M235.008,781.375v2.244H222.074v3.366L213,782.5l9.074-4.488v3.366h12.934Z' transform='translate(-213 -778)'/%3E%3C/svg%3E%0A";
+$arrow-bottom: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='5.375' height='13.062' viewBox='0 0 5.375 13.062'%3E%3Cmetadata%3E%3C%3Fxpacket begin='﻿' id='W5M0MpCehiHzreSzNTczkc9d'%3F%3E%3Cx:xmpmeta xmlns:x='adobe:ns:meta/' x:xmptk='Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01 '%3E%3Crdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23'%3E%3Crdf:Description rdf:about=''/%3E%3C/rdf:RDF%3E%3C/x:xmpmeta%3E%3C%3Fxpacket end='w'%3F%3E%3C/metadata%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; fill-rule: evenodd; %7D %3C/style%3E%3C/defs%3E%3Cpath id='Warstwa_50' data-name='Warstwa 50' class='cls-1' d='M283.355,954.687H284.7v7.681h2.021l-2.694,5.389-2.695-5.389h2.021v-7.681Z' transform='translate(-281.344 -954.688)'/%3E%3C/svg%3E%0A";
