@@ -2,11 +2,10 @@ export default class Carousel {
     constructor(el, fetchUrl) {
         this.el = el;
         this.fetchUrl = fetchUrl;
-        this.loaded = 0;
-        this.observer = new IntersectionObserver(entries => {
-            if(this.loaded === 0 && entries[0].isIntersecting) {
+        this.observer = new IntersectionObserver((entries, observer) => {
+            if(entries[0].isIntersecting) {
                 this.fetchImgs(this.fetchUrl);
-                this.loaded = 1;
+                observer.unobserve(this.el);
             }
         });
         this.observer.observe(this.el);
